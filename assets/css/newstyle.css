@@ -8,10 +8,33 @@
   padding: 40px 0px 20px 0px;
 }
 
+.logo {
+  margin: 5px;  
+}
+
 .section {
   padding: 50px 25px 50px 25px;  
 }
 
 .col li {
   list-style: none;
+}
+
+.afooter {
+  color: white;
+  text-decoration: none;  
+}
+
+.afooter:hover {
+  color: #d2a679;
+}
+
+.imgGaleria {
+  transition: opacity 0.3s ease, filter 0.3s ease;
+  margin: 15px;
+}
+
+.imgGaleria:hover {
+  opacity: 0.8;
+  filter: blur(2px); 
 }
