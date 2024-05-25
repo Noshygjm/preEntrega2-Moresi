@@ -3,98 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/newstyle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+
+
     <title>Web de la nada misma</title>
   </head>
-  <body>
-    <header>
-      <div class="logoWeb"><img src="./assets/img/logo.png" alt="" /></div>
-      <div><h1>LA NADA MISMA</h1></div>
-    </header>
-    <nav>
-      <div class="menu">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/nada.html">Ir a la Nada</a></li>
-          <li><a href="./pages/nohacenada.html">No hace Nada</a></li>
-          <li><a href="./pages/porquenada.html">Porque hacer Nada</a></li>
-          <li><a href="./pages/contacto.html">Y si no hago Nada?</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <div>
-        <h2>Un titulo sin nada</h2>
-        <p>
-          Esta web, está dedicada a la nada misma, y obvio que no sirve para
-          nada, simplemente mostrar que la nada a veces sirve, para demostrar
-          que los pensamientos vacios, muchas veces no son nada.
-        </p>
-      </div>
-      <section>
-        <h2>Sección 1 - Imágenes de la Nada</h2>
-        <p>
-          En las siguientes imágenes, mostramos lo que puede hace la nada. El
-          poder de hacer nada, no se compara con nada, salvo dejar de hacer
-          nada.
-        </p>
-        <div class="imgNada">
-          <img src="./assets/img/nada1.png" alt="" />
-          <img src="./assets/img/nada2.png" alt="" />
-          <img src="./assets/img/nada3.png" alt="" />
-          <img src="./assets/img/nada4.png" alt="" />
-          <img src="./assets/img/nada5.png" alt="" />
-          <img src="./assets/img/nada6.png" alt="" />
+  <body class="body">
+    <div class="container md-10">
+      <header class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="./assets/img/logo.png"
+              alt="Logo de la Nada"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 text-end">
+            <h1 class="ml-auto">LA NADA MISMA</h1>
+          </div>
         </div>
-      </section>
-      <section>
-        <h2>Sección 2 - Video de la Nada</h2>
-        <p>
-          También se han tomado videos de la Nada. Es un echo muy raro para la
-          nada que se demuestra, pero en este caso, la nada demuestra que se
-          puede hacer nada con solo no hacer nada.
-        </p>
-        <div class="videoNada">
-          <video width="500" height="500" autoplay controls>
-            <source src="./assets/media/nada.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footerColumnas">
-        <div class="footerCol1">
-          <ul>
-            <li>
-              <a href="./pages/contacto.html">Si no haces nada, contactame!</a>
-            </li>
-            <li><a href="./pages/porquenada.html">Porque hacer nada</a></li>
-            <li>
-              <a href="./pages/nohacenada.html">Que hago sino hago nada</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footerCol2">
-          <ul>
-            <li>
-              <a href="https://www.google.com/" target="_blank"
-                >Si no te gusta la nada, ve a Google</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/results?search_query=nada"
-                target="_blank"
-                >Busca nada en Youtube</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+      </header>
 
-      <div class="moresi">
-        2024 - Moresi Guillermo - Coder House Comisión 57630
-      </div>
-    </footer>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nada.html">Ir a la Nada</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nohacenada.html"
+                  >No hace Nada</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/porquenada.html"
+                  >Porque hacer Nada</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html"
+                  >Y si no hago Nada?</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Un titulo sin nada</h2>
+            <p>
+              Esta web, está dedicada a la nada misma, y obvio que no sirve para
+              nada, simplemente mostrar que la nada a veces sirve, para
+              demostrar que los pensamientos vacios, muchas veces no son nada.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <section class="section">
+              <h2>Sección 1 - Imágenes de la Nada</h2>
+              <p>
+                En las siguientes imágenes, mostramos lo que puede hace la nada.
+                El poder de hacer nada, no se compara con nada, salvo dejar de
+                hacer nada.
+              </p>
+              <div class="imgNada">
+                <img src="./assets/img/nada1.png" alt="Imagen de Nada 1" />
+                <img src="./assets/img/nada2.png" alt="Imagen de Nada 2" />
+                <img src="./assets/img/nada3.png" alt="Imagen de Nada 3" />
+                <img src="./assets/img/nada4.png" alt="Imagen de Nada 4" />
+                <img src="./assets/img/nada5.png" alt="Imagen de Nada 5" />
+                <img src="./assets/img/nada6.png" alt="Imagen de Nada 6" />
+              </div>
+            </section>
+          </div>
+          <div class="col">
+            <section class="section">
+              <h2>Sección 2 - Video de la Nada</h2>
+              <p>
+                También se han tomado videos de la Nada. Es un echo muy raro
+                para la nada que se demuestra, pero en este caso, la nada
+                demuestra que se puede hacer nada con solo no hacer nada.
+              </p>
+              <div class="videoNada">
+                <video width="500" height="500" autoplay controls>
+                  <source src="./assets/media/nada.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="container">
+        <div class="row">
+          <div class="col text-end">
+            <ul>
+              <li>
+                <a href="./pages/contacto.html"
+                  >Si no haces nada, contactame!</a
+                >
+              </li>
+              <li><a href="./pages/porquenada.html">Porque hacer nada</a></li>
+              <li>
+                <a href="./pages/nohacenada.html">Que hago sino hago nada</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col text-start">
+            <ul>
+              <li>
+                <a href="https://www.google.com/" target="_blank"
+                  >Si no te gusta la nada, ve a Google</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/results?search_query=nada"
+                  target="_blank"
+                  >Busca nada en Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col text-center">
+            <p>2024 - Moresi Guillermo - Coder House Comisión 57630</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

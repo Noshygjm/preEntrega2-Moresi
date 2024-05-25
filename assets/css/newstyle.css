@@ -1,0 +1,17 @@
+.body {
+  font-family: NadaFonts;
+  src: url(../fonts/Poppins-Regular.ttf);
+  color: azure;
+
+  background-color: rgb(44, 8, 8);
+
+  padding: 40px 0px 20px 0px;
+}
+
+.section {
+  padding: 50px 25px 50px 25px;  
+}
+
+.col li {
+  list-style: none;
+}
