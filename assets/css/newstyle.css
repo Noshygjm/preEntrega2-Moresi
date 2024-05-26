@@ -1,3 +1,37 @@
+@media (max-width: 767px) {
+  .alignH1Header {
+    text-align: center;
+  }
+  .alignLogoHeader {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+}
+
+@media (max-width: 525px) {
+  .video {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 526px) {
+  .video {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+
+
 .body {
   font-family: NadaFonts;
   src: url(../fonts/Poppins-Regular.ttf);
@@ -9,11 +43,11 @@
 }
 
 .logo {
-  margin: 5px;  
+  margin: 5px;
 }
 
 .section {
-  padding: 50px 25px 50px 25px;  
+  padding: 20px 25px 20px 25px;
 }
 
 .col li {
@@ -22,7 +56,7 @@
 
 .afooter {
   color: white;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .afooter:hover {
@@ -36,7 +70,7 @@
 
 .imgGaleria:hover {
   opacity: 0.8;
-  filter: blur(2px); 
+  filter: blur(2px);
 }
 
 .imgNada {
@@ -47,4 +81,69 @@
 
 .imgNada img {
   height: auto;
+}
+
+.videoNada {
+  text-align: center;
+}
+
+
+/* Tablero de Ajedrez */
+
+.tableroAjedrez {
+  display: grid;
+  grid-template-columns: repeat(8, 75px);
+  grid-template-rows: repeat(8, 75px);
+
+  margin: auto;
+}
+
+.tableroAjedrez .celda {
+  position: relative;
+}
+
+.blanca {
+  background-color: white;
+}
+
+.negra {
+  background-color: black;
+}
+
+
+
+@media (max-width: 576px) {
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, 40px);
+    grid-template-rows: repeat(8, 40px);
+    width: 320px;
+  }
+  .celda {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    width: 400px;
+  }
+  .celda {
+    width: 50px;    
+    height: 50px;
+  }
+}
+
+@media (min-width: 769px) {
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, 75px);
+    grid-template-rows: repeat(8, 75px);
+    width: 600px;
+  }
+  .celda {
+    width: 75px;
+    height: 75px;
+  }  
 }
