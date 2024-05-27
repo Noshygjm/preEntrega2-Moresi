@@ -34,11 +34,19 @@
   font-family: NadaFonts;
   src: url(../fonts/Poppins-Regular.ttf);
   color: azure;
-font-size: larger;
+  font-size: larger;
 
   background-color: rgb(44, 8, 8);
 
   padding: 40px 0px 20px 0px;
+}
+
+.h2 {
+  padding-top: 30px;
+}
+
+.h3 {
+  padding-top: 30px;
 }
 
 .logo {
@@ -144,13 +152,41 @@ font-size: larger;
   }
 }
 
-/* Estilo personalizado para el tamaño del carousel */
+/* Carousel */
 .carousel-inner {
   width: 80%;
-  height: 300px; /* Ajusta la altura máxima del carousel */
+  height: 300px;
 }
 .carousel-item img {
   width: 300px;
-  height: 300px; /* Ajusta la altura específica de las imágenes */
+  height: 300px;
   object-fit: contain;
+}
+
+/* Collapse */
+
+.card-header h5 {
+  background-color: rgb(44, 8, 8); 
+}
+
+.card-body {
+  background-color: rgb(44, 8, 8); 
+}
+
+.card {
+  background-color: rgb(44, 8, 8); 
+}
+
+.card-body p {
+  color: white;
+}
+
+.card-header .btn-link {
+  color: rgb(141, 135, 135); 
+  text-decoration: none;
+}
+
+.card-header .btn-link:hover {
+  color: rgb(150, 3, 3); 
+  text-decoration: none;
 }
