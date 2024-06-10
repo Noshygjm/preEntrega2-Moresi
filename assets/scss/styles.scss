@@ -118,6 +118,8 @@ $body-with: 800px;
   margin: auto;
 }
 
+
+
 .tableroAjedrez .celda {
   position: relative;
 }
@@ -140,6 +142,12 @@ $body-with: 800px;
     width: $tamano-casilla-chess1;
     height: $tamano-casilla-chess1;
   }
+  .piezaAjedrez {
+    width: $tamano-casilla-chess1;
+    height: $tamano-casilla-chess1; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -152,6 +160,12 @@ $body-with: 800px;
     width: $tamano-casilla-chess2;
     height: $tamano-casilla-chess2;
   }
+  .piezaAjedrez {
+    width: $tamano-casilla-chess2;
+    height: $tamano-casilla-chess2;  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }  
 }
 
 @media (min-width: 769px) {
@@ -164,6 +178,16 @@ $body-with: 800px;
     width: $tamano-casilla-chess3;
     height: $tamano-casilla-chess3;
   }
+  .piezaAjedrez {
+    width: $tamano-casilla-chess3;
+    height: $tamano-casilla-chess3;  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }  
+}
+
+.piezaAjedrez:hover {
+  opacity: 1;
 }
 
 /* Carousel */

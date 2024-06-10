@@ -118,6 +118,12 @@
     width: 40px;
     height: 40px;
   }
+  .piezaAjedrez {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 }
 @media (min-width: 577px) and (max-width: 768px) {
   .tableroAjedrez {
@@ -128,6 +134,12 @@
   .celda {
     width: 50px;
     height: 50px;
+  }
+  .piezaAjedrez {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
 }
 @media (min-width: 769px) {
@@ -140,7 +152,17 @@
     width: 75px;
     height: 75px;
   }
+  .piezaAjedrez {
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 }
+.piezaAjedrez:hover {
+  opacity: 1;
+}
+
 /* Carousel */
 .carousel-inner {
   width: 80%;
