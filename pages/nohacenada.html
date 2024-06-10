@@ -3,94 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./../assets/css/style.css" />
+    <link rel="stylesheet" href="./../assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Web de la nada misma</title>
   </head>
-  <body>
-    <header>
-      <div class="logoWeb"><img src="./../assets/img/logo.png" alt="" /></div>
-      <div><h1>LA NADA MISMA</h1></div>
-    </header>
-    <nav>
-      <div class="menu">
-        <ul>
-          <li><a href="./../index.html">Home</a></li>
-          <li><a href="./../pages/nada.html">Ir a la Nada</a></li>
-          <li><a href="./../pages/nohacenada.html">No hace Nada</a></li>
-          <li><a href="./../pages/porquenada.html">Porque hacer Nada</a></li>
-          <li><a href="./../pages/contacto.html">Y si no hago Nada?</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <h2>Todo lo que tienen que saber filosóficamente sobre la nada!</h2>
-      <div class="iframes">
-        <iframe
-          width="500"
-          height="250"
-          src="https://www.youtube.com/embed/FjXQ1-EN5lo"
-          title="¿Qué es la nada? Una cuestión filosófica sin respuesta"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <h2>Según la filosofía, ¿Qué es la nada?</h2>
-      <div>
-<p>La noción de <strong>"nada"</strong> en la filosofía es compleja y multifacética, y ha sido interpretada de diversas maneras a lo largo de la historia por diferentes tradiciones filosóficas. Desde la ausencia absoluta de ser hasta la fuente de posibilidades infinitas, la nada sigue siendo un enigma que desafía nuestra comprensión y nos invita a reflexionar sobre el significado último de la existencia.</p>
-      </div>
-
-      <h2>En Goole maps, hay una isla para hacer nada</h2>
-      <div class="iframes">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42512.365958649134!2d-31.10012005770018!3d39.6992328769466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1714861588271!5m2!1ses-419!2sar"
-          width="500"
-          height="500"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </main>
-    <footer>
-      <div class="footerColumnas">
-        <div class="footerCol1">
-          <ul>
-            <li>
-              <a href="./../pages/contacto.html"
-                >Si no haces nada, contactame!</a
-              >
-            </li>
-            <li><a href="./../pages/porquenada.html">Porque hacer nada</a></li>
-            <li>
-              <a href="./../pages/nohacenada.html">Que hago sino hago nada</a>
-            </li>
-          </ul>
+  <body class="body">
+    <div class="container md-10">
+      <header class="container">
+        <div class="row">
+          <div class="col-md-6 alignLogoHeader">
+            <img
+              src="./../assets/img/logo.png"
+              alt="Logo de la Nada"
+              class="logo"
+            />
+          </div>
+          <div class="col-md-6 alignH1Header">
+            <h1 class="ml-auto">LA NADA MISMA</h1>
+          </div>
         </div>
-        <div class="footerCol2">
-          <ul>
-            <li>
-              <a href="https://www.google.com/" target="_blank"
-                >Si no te gusta la nada, ve a Google</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/results?search_query=nada"
-                target="_blank"
-                >Busca nada en Youtube</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+      </header>
 
-      <div class="moresi">
-        2024 - Moresi Guillermo - Coder House Comisión 57630
-      </div>
-    </footer>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link" href="./../index.html">Home</a>
+            <a class="nav-link " href="./../pages/nada.html"
+              >Ir a la Nada</a
+            >
+            <a class="nav-link active" href="./../pages/nohacenada.html"
+              >No hace Nada</a
+            >
+            <a class="nav-link" href="./../pages/porquenada.html"
+              >Porque hacer Nada</a
+            >
+            <a class="nav-link" href="./pages/contacto.html"
+              >Y si no hago Nada? Contáctame</a
+            >
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Todo lo que tienen que saber filosóficamente sobre la nada!</h2>
+        <div class="iframes">
+          <iframe
+            width="500"
+            height="250"
+            src="https://www.youtube.com/embed/FjXQ1-EN5lo"
+            title="¿Qué es la nada? Una cuestión filosófica sin respuesta"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h2>Según la filosofía, ¿Qué es la nada?</h2>
+        <div>
+          <p>
+            La noción de <strong>"nada"</strong> en la filosofía es compleja y
+            multifacética, y ha sido interpretada de diversas maneras a lo largo
+            de la historia por diferentes tradiciones filosóficas. Desde la
+            ausencia absoluta de ser hasta la fuente de posibilidades infinitas,
+            la nada sigue siendo un enigma que desafía nuestra comprensión y nos
+            invita a reflexionar sobre el significado último de la existencia.
+          </p>
+        </div>
+
+        <h2>En Goole maps, hay una isla para hacer nada</h2>
+        <div class="iframes">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42512.365958649134!2d-31.10012005770018!3d39.6992328769466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1714861588271!5m2!1ses-419!2sar"
+            width="500"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </main>
+      <footer class="container">
+        <div class="row">
+          <div class="col text-end">
+            <ul>
+              <li>
+                <a class="afooter" href="./../pages/contacto.html"
+                  >Si no haces nada, contactame!</a
+                >
+              </li>
+              <li>
+                <a class="afooter" href="./../pages/porquenada.html"
+                  >Porque hacer nada</a
+                >
+              </li>
+              <li>
+                <a class="afooter" href="./../pages/nohacenada.html"
+                  >Que hago sino hago nada</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col text-start">
+            <ul>
+              <li>
+                <a
+                  class="afooter"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >Si no te gusta la nada, ve a Google</a
+                >
+              </li>
+              <li>
+                <a
+                  class="afooter"
+                  href="https://www.youtube.com/results?search_query=nada"
+                  target="_blank"
+                  >Busca nada en Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>
+              2024 - Moresi Guillermo -
+              <a class="afooter" href="https://www.coderhouse.com/"
+                >Coder House</a
+              >
+              Comisión 57630
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

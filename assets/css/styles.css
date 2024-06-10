@@ -213,4 +213,19 @@
   padding: 50px 0px 50px 0px;
 }
 
+.iframes {
+  text-align: center;
+  margin: 10px 0px 20px 0px;
+}
+
+.imagenParrafo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.textoAlrededorImagen {
+  padding: 0px 10px 0px 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
