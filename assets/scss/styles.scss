@@ -1,0 +1,205 @@
+// Definición de variables
+$color-primario: rgb(28, 22, 14);
+$color-secundario: rgb(52, 40, 26);
+$color-font: azure;
+$color-titulo: beige;
+$color-link: beige;
+$tamano-fuente: larger;
+$tamano-col-footer: 350px;
+$tamano-casilla-chess1: 40px;
+$tamano-casilla-chess2: 50px;
+$tamano-casilla-chess3: 75px;
+$espaciado: 20px;
+$body-with: 800px;
+
+@media (max-width: 767px) {
+  .alignH1Header {
+    text-align: center;
+  }
+  .alignLogoHeader {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+}
+
+@media (max-width: 525px) {
+  .video {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 526px) {
+  .video {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.body {
+  font-family: NadaFonts;
+  src: url(../fonts/Poppins-Regular.ttf);
+  color: $color-font;
+  font-size: $tamano-fuente;
+
+  background-color: $color-primario;
+
+  padding: 40px 0px 20px 0px;
+}
+
+.h2 {
+  padding-top: 30px;
+}
+
+.h3 {
+  padding-top: 30px;
+}
+
+.logo {
+  margin: 5px;
+}
+
+.section {
+  padding: 20px 25px 20px 25px;
+}
+
+.col li {
+  list-style: none;
+}
+
+.afooter {
+  color: $color-font;
+  text-decoration: none;
+}
+
+.afooter:hover {
+  color: #d2a679;
+}
+
+.imgGaleria {
+  transition: opacity 0.3s ease, filter 0.3s ease;
+  margin: 15px;
+}
+
+.imgGaleria:hover {
+  opacity: 0.8;
+  filter: blur(2px);
+}
+
+.imgNada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgNada img {
+  height: auto;
+}
+
+.videoNada {
+  text-align: center;
+}
+
+/* Tablero de Ajedrez */
+
+.tableroAjedrez {
+  display: grid;
+  grid-template-columns: repeat(8, $tamano-casilla-chess3);
+  grid-template-rows: repeat(8, $tamano-casilla-chess3);
+
+  margin: auto;
+}
+
+.tableroAjedrez .celda {
+  position: relative;
+}
+
+.blanca {
+  background-color: white;
+}
+
+.negra {
+  background-color: black;
+}
+
+@media (max-width: 576px) {
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, $tamano-casilla-chess1);
+    grid-template-rows: repeat(8, $tamano-casilla-chess1);
+    width: $tamano-casilla-chess1 * 8;
+  }
+  .celda {
+    width: $tamano-casilla-chess1;
+    height: $tamano-casilla-chess1;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, $tamano-casilla-chess2);
+    grid-template-rows: repeat(8, $tamano-casilla-chess2);
+    width: $tamano-casilla-chess2 * 8;
+  }
+  .celda {
+    width: $tamano-casilla-chess2;
+    height: $tamano-casilla-chess2;
+  }
+}
+
+@media (min-width: 769px) {
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, $tamano-casilla-chess3);
+    grid-template-rows: repeat(8, $tamano-casilla-chess3);
+    width: $tamano-casilla-chess3 * 8;
+  }
+  .celda {
+    width: $tamano-casilla-chess3;
+    height: $tamano-casilla-chess3;
+  }
+}
+
+/* Carousel */
+.carousel-inner {
+  width: 80%;
+  height: 300px;
+}
+.carousel-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+/* Collapse */
+.card-header h5 {
+  background-color: $color-secundario; 
+}
+
+.card-body {
+  background-color: $color-secundario; 
+}
+
+.card {
+  background-color: $color-secundario; 
+}
+
+.card-body p {
+  color: $color-font;
+}
+
+.card-header .btn-link {
+  color: rgb(141, 135, 135); 
+  text-decoration: none;
+}
+
+.card-header .btn-link:hover {
+  color: rgb(150, 3, 3); 
+  text-decoration: none;
+}
