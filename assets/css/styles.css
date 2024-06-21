@@ -1,31 +1,3 @@
-@media (max-width: 767px) {
-  .alignH1Header {
-    text-align: center;
-  }
-  .alignLogoHeader {
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  .alignH1Header {
-    text-align: end;
-  }
-  .alignLogoHeader {
-    text-align: start;
-  }
-}
-@media (max-width: 525px) {
-  .video {
-    width: 90%;
-    height: auto;
-  }
-}
-@media (min-width: 526px) {
-  .video {
-    width: 500px;
-    height: 500px;
-  }
-}
 .body {
   font-family: NadaFonts;
   src: url(../fonts/Poppins-Regular.ttf);
@@ -108,57 +80,6 @@
   background-color: black;
 }
 
-@media (max-width: 576px) {
-  .tableroAjedrez {
-    grid-template-columns: repeat(8, 40px);
-    grid-template-rows: repeat(8, 40px);
-    width: 320px;
-  }
-  .celda {
-    width: 40px;
-    height: 40px;
-  }
-  .piezaAjedrez {
-    width: 40px;
-    height: 40px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-}
-@media (min-width: 577px) and (max-width: 768px) {
-  .tableroAjedrez {
-    grid-template-columns: repeat(8, 50px);
-    grid-template-rows: repeat(8, 50px);
-    width: 400px;
-  }
-  .celda {
-    width: 50px;
-    height: 50px;
-  }
-  .piezaAjedrez {
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-}
-@media (min-width: 769px) {
-  .tableroAjedrez {
-    grid-template-columns: repeat(8, 75px);
-    grid-template-rows: repeat(8, 75px);
-    width: 600px;
-  }
-  .celda {
-    width: 75px;
-    height: 75px;
-  }
-  .piezaAjedrez {
-    width: 75px;
-    height: 75px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-}
 .piezaAjedrez:hover {
   opacity: 1;
 }
@@ -226,6 +147,132 @@
 
 .textoAlrededorImagen {
   padding: 0px 10px 0px 10px;
+}
+
+@media (max-width: 575px) {
+  .iframes {
+    width: 90%;
+    height: auto;
+  }
+  .alignH1Header {
+    text-align: center;
+  }
+  .alignLogoHeader {
+    text-align: center;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, 40px);
+    grid-template-rows: repeat(8, 40px);
+    width: 320px;
+  }
+  .celda {
+    width: 40px;
+    height: 40px;
+  }
+  .piezaAjedrez {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+@media (min-width: 576px) {
+  .iframes {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    width: 400px;
+  }
+  .celda {
+    width: 50px;
+    height: 50px;
+  }
+  .piezaAjedrez {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    width: 400px;
+  }
+  .celda {
+    width: 50px;
+    height: 50px;
+  }
+  .piezaAjedrez {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, 75px);
+    grid-template-rows: repeat(8, 75px);
+    width: 600px;
+  }
+  .celda {
+    width: 75px;
+    height: 75px;
+  }
+  .piezaAjedrez {
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+@media (min-width: 1200px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, 75px);
+    grid-template-rows: repeat(8, 75px);
+    width: 600px;
+  }
+  .celda {
+    width: 75px;
+    height: 75px;
+  }
+  .piezaAjedrez {
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,38 +12,6 @@ $tamano-casilla-chess3: 75px;
 $espaciado: 20px;
 $body-with: 800px;
 
-@media (max-width: 767px) {
-  .alignH1Header {
-    text-align: center;
-  }
-  .alignLogoHeader {
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .alignH1Header {
-    text-align: end;
-  }
-  .alignLogoHeader {
-    text-align: start;
-  }
-}
-
-@media (max-width: 525px) {
-  .video {
-    width: 90%;
-    height: auto;
-  }
-}
-
-@media (min-width: 526px) {
-  .video {
-    width: 500px;
-    height: 500px;
-  }
-}
-
 .body {
   font-family: NadaFonts;
   src: url(../fonts/Poppins-Regular.ttf);
@@ -132,60 +100,6 @@ $body-with: 800px;
   background-color: black;
 }
 
-@media (max-width: 576px) {
-  .tableroAjedrez {
-    grid-template-columns: repeat(8, $tamano-casilla-chess1);
-    grid-template-rows: repeat(8, $tamano-casilla-chess1);
-    width: $tamano-casilla-chess1 * 8;
-  }
-  .celda {
-    width: $tamano-casilla-chess1;
-    height: $tamano-casilla-chess1;
-  }
-  .piezaAjedrez {
-    width: $tamano-casilla-chess1;
-    height: $tamano-casilla-chess1; 
-    opacity: 0; 
-    transition: opacity 0.5s ease-in-out;
-  }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-  .tableroAjedrez {
-    grid-template-columns: repeat(8, $tamano-casilla-chess2);
-    grid-template-rows: repeat(8, $tamano-casilla-chess2);
-    width: $tamano-casilla-chess2 * 8;
-  }
-  .celda {
-    width: $tamano-casilla-chess2;
-    height: $tamano-casilla-chess2;
-  }
-  .piezaAjedrez {
-    width: $tamano-casilla-chess2;
-    height: $tamano-casilla-chess2;  
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }  
-}
-
-@media (min-width: 769px) {
-  .tableroAjedrez {
-    grid-template-columns: repeat(8, $tamano-casilla-chess3);
-    grid-template-rows: repeat(8, $tamano-casilla-chess3);
-    width: $tamano-casilla-chess3 * 8;
-  }
-  .celda {
-    width: $tamano-casilla-chess3;
-    height: $tamano-casilla-chess3;
-  }
-  .piezaAjedrez {
-    width: $tamano-casilla-chess3;
-    height: $tamano-casilla-chess3;  
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }  
-}
-
 .piezaAjedrez:hover {
   opacity: 1;
 }
@@ -256,3 +170,137 @@ $body-with: 800px;
   padding: 0px 10px 0px 10px;  
 }
 
+@media (max-width: 575px) {
+  .iframes {
+    width: 90%;
+    height: auto;
+  }
+  .alignH1Header {
+    text-align: center;
+  }
+  .alignLogoHeader {
+    text-align: center;
+  }  
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, $tamano-casilla-chess1);
+    grid-template-rows: repeat(8, $tamano-casilla-chess1);
+    width: $tamano-casilla-chess1 * 8;
+  }
+  .celda {
+    width: $tamano-casilla-chess1;
+    height: $tamano-casilla-chess1;
+  }
+  .piezaAjedrez {
+    width: $tamano-casilla-chess1;
+    height: $tamano-casilla-chess1; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+  }  
+}
+
+@media (min-width: 576px) {
+  .iframes {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, $tamano-casilla-chess2);
+    grid-template-rows: repeat(8, $tamano-casilla-chess2);
+    width: $tamano-casilla-chess2 * 8;
+  }
+  .celda {
+    width: $tamano-casilla-chess2;
+    height: $tamano-casilla-chess2;
+  }
+  .piezaAjedrez {
+    width: $tamano-casilla-chess2;
+    height: $tamano-casilla-chess2;  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }   
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, $tamano-casilla-chess2);
+    grid-template-rows: repeat(8, $tamano-casilla-chess2);
+    width: $tamano-casilla-chess2 * 8;
+  }
+  .celda {
+    width: $tamano-casilla-chess2;
+    height: $tamano-casilla-chess2;
+  }
+  .piezaAjedrez {
+    width: $tamano-casilla-chess2;
+    height: $tamano-casilla-chess2;  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }   
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, $tamano-casilla-chess3);
+    grid-template-rows: repeat(8, $tamano-casilla-chess3);
+    width: $tamano-casilla-chess3 * 8;
+  }
+  .celda {
+    width: $tamano-casilla-chess3;
+    height: $tamano-casilla-chess3;
+  }
+  .piezaAjedrez {
+    width: $tamano-casilla-chess3;
+    height: $tamano-casilla-chess3;  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }    
+}
+
+
+@media (min-width: 1200px ) {
+  .alignH1Header {
+    text-align: end;
+  }
+  .alignLogoHeader {
+    text-align: start;
+  }
+  .tableroAjedrez {
+    grid-template-columns: repeat(8, $tamano-casilla-chess3);
+    grid-template-rows: repeat(8, $tamano-casilla-chess3);
+    width: $tamano-casilla-chess3 * 8;
+  }
+  .celda {
+    width: $tamano-casilla-chess3;
+    height: $tamano-casilla-chess3;
+  }
+  .piezaAjedrez {
+    width: $tamano-casilla-chess3;
+    height: $tamano-casilla-chess3;  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }    
+}
