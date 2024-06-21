@@ -31,8 +31,20 @@ $body-with: 800px;
   padding-top: 30px;
 }
 
+.h1:hover {
+  color: #d2a679;
+}
+
 .logo {
   margin: 5px;
+  border: 5px solid #d8e6c6;
+  border-radius: 15px;
+  filter: contrast(1.5) brightness(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1); 
+  border: 5px solid #d2a679;  
 }
 
 .section {
@@ -86,8 +98,6 @@ $body-with: 800px;
   margin: auto;
 }
 
-
-
 .tableroAjedrez .celda {
   position: relative;
 }
@@ -117,15 +127,15 @@ $body-with: 800px;
 
 /* Collapse */
 .card-header h5 {
-  background-color: $color-secundario; 
+  background-color: $color-secundario;
 }
 
 .card-body {
-  background-color: $color-secundario; 
+  background-color: $color-secundario;
 }
 
 .card {
-  background-color: $color-secundario; 
+  background-color: $color-secundario;
 }
 
 .card-body p {
@@ -133,12 +143,12 @@ $body-with: 800px;
 }
 
 .card-header .btn-link {
-  color: rgb(141, 135, 135); 
+  color: rgb(141, 135, 135);
   text-decoration: none;
 }
 
 .card-header .btn-link:hover {
-  color: rgb(150, 3, 3); 
+  color: rgb(150, 3, 3);
   text-decoration: none;
 }
 
@@ -146,12 +156,12 @@ $body-with: 800px;
 .formContacto {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap; 
-  
+  flex-wrap: nowrap;
+
   width: $body-with / 1.5;
   margin-left: auto;
   margin-right: auto;
-  
+
   padding: 50px 0px 50px 0px;
 }
 
@@ -167,7 +177,17 @@ $body-with: 800px;
 }
 
 .textoAlrededorImagen {
-  padding: 0px 10px 0px 10px;  
+  padding: 0px 10px 0px 10px;
+}
+
+/* Estilos para el botón flotante que lleva al principio */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  text-decoration: none;
+  display: block;
 }
 
 @media (max-width: 575px) {
@@ -180,7 +200,7 @@ $body-with: 800px;
   }
   .alignLogoHeader {
     text-align: center;
-  }  
+  }
   .tableroAjedrez {
     grid-template-columns: repeat(8, $tamano-casilla-chess1);
     grid-template-rows: repeat(8, $tamano-casilla-chess1);
@@ -192,10 +212,10 @@ $body-with: 800px;
   }
   .piezaAjedrez {
     width: $tamano-casilla-chess1;
-    height: $tamano-casilla-chess1; 
-    opacity: 0; 
+    height: $tamano-casilla-chess1;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }  
+  }
 }
 
 @media (min-width: 576px) {
@@ -204,7 +224,6 @@ $body-with: 800px;
     height: 500px;
   }
 }
-
 
 @media (min-width: 576px) and (max-width: 767px) {
   .alignH1Header {
@@ -224,12 +243,11 @@ $body-with: 800px;
   }
   .piezaAjedrez {
     width: $tamano-casilla-chess2;
-    height: $tamano-casilla-chess2;  
+    height: $tamano-casilla-chess2;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }   
+  }
 }
-
 
 @media (min-width: 768px) and (max-width: 991px) {
   .alignH1Header {
@@ -249,12 +267,11 @@ $body-with: 800px;
   }
   .piezaAjedrez {
     width: $tamano-casilla-chess2;
-    height: $tamano-casilla-chess2;  
+    height: $tamano-casilla-chess2;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }   
+  }
 }
-
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .alignH1Header {
@@ -274,14 +291,13 @@ $body-with: 800px;
   }
   .piezaAjedrez {
     width: $tamano-casilla-chess3;
-    height: $tamano-casilla-chess3;  
+    height: $tamano-casilla-chess3;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }    
+  }
 }
 
-
-@media (min-width: 1200px ) {
+@media (min-width: 1200px) {
   .alignH1Header {
     text-align: end;
   }
@@ -299,8 +315,8 @@ $body-with: 800px;
   }
   .piezaAjedrez {
     width: $tamano-casilla-chess3;
-    height: $tamano-casilla-chess3;  
+    height: $tamano-casilla-chess3;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }    
+  }
 }
